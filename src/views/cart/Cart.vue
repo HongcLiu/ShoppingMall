@@ -1,12 +1,25 @@
 <template>
-  <div>
-    <h2>购物车</h2>
+  <div id="cart">
+    <show-cart>
+      <show-cart-item>
+        <span slot="name">名字</span>
+        <span slot="price">价格</span>
+        <span slot="num">数量</span>
+      </show-cart-item>
+    </show-cart>
   </div>
 </template>
 
 <script>
+import ShowCart from "./show-cart/ShowCart";
+import ShowCartItem from "./show-cart/ShowCartItem";
+
 export default {
-name: "Cart"
+  name: "Cart",
+  components: {
+    ShowCart,
+    ShowCartItem
+  }
 }
 </script>
 
