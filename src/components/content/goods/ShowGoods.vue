@@ -1,15 +1,19 @@
 <template>
-  <div>
-    <h2>展示商品信息</h2>
+  <div class="show-goods">
+    <slot></slot>
   </div>
 </template>
 
 <script>
+
 export default {
-name: "ShowGoods"
+  name: "ShowGoods",
 }
 </script>
 
 <style scoped>
-
+  .show-goods {
+    margin-left: 10px;
+    float: left;
+  }
 </style>
